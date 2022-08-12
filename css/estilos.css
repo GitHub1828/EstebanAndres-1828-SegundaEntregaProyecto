@@ -86,7 +86,7 @@ p{
     line-height: 25px;
 }
 
-#galeria .col-lg-4 {
+#galeria .col-xl-4, .col-lg-4, .col-md-6, .col-sm-12, .col-xs-12 {
     margin: 0 !important;
     padding: 0;
 
@@ -96,41 +96,6 @@ p{
     width: 433px;
     height: 339px;
 }
-
-/* .container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container figure{
-    position: relative;
-    height: 250px;
-    width: 350px;
-    overflow: hidden;
-    cursor: pointer;
-
-}
-
-.container figure img{
-    height: 100%;
-    width: 100%;
-    transition: all 500ms ease-out;
-}
-
-.container figure .capa{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #fdc131;
-    opacity: .6;
-
-}
- */
-
 
 footer{
     height: auto;
