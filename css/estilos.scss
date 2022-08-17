@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//////////////MIS VARIABLES////////////
+
+$color1828:#fdc131;
+$colorg: #353636;
+$colork: #000;
+$colorw: #fff;
+
+$font1: 'Montserrat';
+$font2: thin;
+$font3: bold;
+
+//////////////FIN VARIABLES////////////
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: $color1828;
+    font-family: $font1;
+    font-size: 28px;
+    display: flex;
+    transition: color .4s ease;
+    /* text-shadow: 1px 1px 5px #000; */
+    /* color: #000; */
+    /* white-space: wrap; */
+}
+
+.navbar a{
+    /* text-shadow: 1px 1px 2px #000; */
+    color: $colork;
+}
+
+.navbar a:hover{
+    /* text-shadow: 1px 1px 2px #000; */
+    color: $colorw;
+}
+
+.navbar-toogle{
+    color: $colork;
+    background-color:$color1828;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    /* display: none; */
+}
+
+.carousel-item{
+    height: 70vh;
+    width: 100%;
+    background-color: $colork;
+    background-size: cover;
+    background-position: center;
+    /* padding: 0%; */
+    /* margin-bottom: 30px; */
+    text-shadow: 2px 2px 10px $colork;
+}
+
+h1{
+    font-family: $font1;
+    font-weight: 200 ;
+    font-size: 36px;
+    color: $colork;
+}
+
+h2{
+    height: 4rem;
+    font-family: $font1;
+    background-color: $color1828;
+    color: $colork;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin: 0%;
+}
+
+h3{
+    font-family: $font1;
+    font-size: 72px;
+    /* font-weight: bold; */
+    font-weight: 100 ;
+    line-height: 70px;
+}
+
+p{
+    font-family: $font1;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* .btn-dark{
+    height: auto;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+} */
+
+#galeria .col-xl-4, .col-lg-4, .col-md-6, .col-sm-12, .col-xs-12 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#galeria img { 
+    /* height: 100%; */
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* align-content: center; */
+    /* align-items: center; */
+    // border: 2px solid #000;
+}
+
+.featured{
+    height: 22rem;
+    width: 100vw;
+    font-family: $font1;
+    font-weight: 200 ;
+    font-size: 36px;
+    color: $colork;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    h4{
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        color: $color1828;
+    }
+    h4 span{
+        margin-top: 100px;
+        font-size: 90px;
+    }
+}
+
+footer{
+    height: auto;
+    width: 100vw;
+    background-color: $color1828;
+    font-family: $font1;
+    padding: 20px;
+    color: $colork;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+
+    p{
+        display: flex;
+        margin-bottom: 16px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    p span{
+        margin-bottom: 16px;
+        opacity: .6;
+    }
+
+    i{
+        font-size: 30px;
+        color: $colork;
+        letter-spacing: 18px;   
+    }
+
+    i:hover{
+        color: $colorw;
+    }
+}
+
+/* .footer-content{
+    max-width: 600px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 3rem;
+} */
+
+.subir{
+    height: 50px;
+    width: 50px;
+    background-color: $color1828;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid $colork;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    font-size: 27px;
+    color: $colork;
+    
+    :hover{
+        color: $colorw;
+    }
+}
+
+@import "_clients";
+
+
+/* @media (max-width: 576px) {
+    .header {
+        height: 100px;
+    }
+} */
