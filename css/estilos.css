@@ -29,7 +29,7 @@
   padding: 0 20px;
 }
 
-.carousel-item {
+.carousel-item, .contact img {
   height: 70vh;
   width: 100%;
   background-color: #000;
@@ -46,19 +46,18 @@ h1 {
 }
 
 h2 {
-  height: 4rem;
-  font-family: "Montserrat";
+  height: 5rem;
   background-color: #fdc131;
+  font-family: "Montserrat";
   color: #000;
   text-align: center;
   padding: 1rem 2rem;
-  margin: 0%;
+  margin: 0px;
 }
 
 h3 {
   font-family: "Montserrat";
   font-size: 72px;
-  /* font-weight: bold; */
   font-weight: 100;
   line-height: 70px;
 }
@@ -70,30 +69,100 @@ p {
   line-height: 25px;
 }
 
-#galeria .col-xl-4, .col-lg-4, .col-md-6, .col-sm-12, .col-xs-12 {
-  margin: 0 !important;
+#galeria .col-xxl-4, .col-xl-4, .col-lg-4, .col-md-6, .col-sm-12, .col-xs-12 {
   padding: 0 !important;
+  margin: 0 !important;
 }
 
 #galeria img {
   height: auto;
   width: 100%;
-  padding: 0;
-  margin: 0;
+}
+
+.clientHeader {
+  background-color: #fdc131;
+  padding: 6rem;
+  color: #fff;
+  height: 5rem;
+}
+.clientHeader h2 {
+  margin-top: 0px;
+  color: #000;
+}
+.clientHeader h1 {
+  color: #fff;
+}
+
+.clientGalery {
+  background-color: #fdc131;
+  padding: 8rem;
+}
+.clientGalery .row {
+  padding: 0px;
+}
+.clientGalery .col {
+  margin: 5px;
 }
 
 .agency {
-  height: 350px;
+  height: auto;
   width: 100%;
   background-color: #fdc131;
   margin-bottom: 0px;
   padding-bottom: 0px;
+  -o-object-position: center;
+     object-position: center;
+}
+.agency .row {
+  background-color: #fdc131;
+}
+.agency h2 {
+  margin-top: 4rem;
 }
 .agency h1 {
   color: #fff;
+  background-color: #fdc131;
+  text-align: center;
+  -o-object-position: center;
+     object-position: center;
+  margin: 2rem;
+}
+.agency a {
+  border-radius: 0px;
+  font-size: 20px;
+  border: solid 2px #fff;
+  color: #fff;
+  margin: 2rem;
+  padding: 12px 20px;
+}
+.agency a:hover {
+  color: #fdc131;
+  border: solid 2px #000;
+  background-color: #000;
 }
 
-.featured, .agency {
+.agencyCont {
+  background-color: #fdc131;
+  padding: 4rem;
+}
+.agencyCont h1 {
+  color: #fff;
+  padding-bottom: 2rem;
+}
+.agencyCont a {
+  border-radius: 0;
+  padding: 1rem;
+  color: #fff;
+  background-color: #fdc131;
+  border: solid 2px #fff;
+}
+.agencyCont a:hover {
+  color: #fff;
+  background-color: #000;
+  border: solid 2px #000;
+}
+
+.featured {
   height: 22rem;
   width: 100vw;
   font-family: "Montserrat";
@@ -104,15 +173,81 @@ p {
   flex-direction: column;
   justify-content: center;
 }
-.featured h4, .agency h4 {
+.featured h4 {
   font-size: 20px;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   color: #fdc131;
 }
-.featured h4 span, .agency h4 span {
-  margin-top: 100px;
+.featured h4 span {
+  margin-top: 1rem;
   font-size: 90px;
+}
+.featured a {
+  border-radius: 0px;
+  font-size: 20px;
+  border: solid 2px #353636;
+  color: #fdc131;
+  padding: 12px 20px;
+}
+.featured a:hover {
+  color: #fdc131;
+  border: solid 2px #000;
+  background-color: #000;
+}
+
+.contact {
+  background-color: #000;
+}
+.contact .col {
+  border: 2px solid #000;
+}
+.contact .row {
+  border: 0px solid #fdc131;
+}
+.contact h2 {
+  padding: 1rem;
+}
+
+.contact h1 {
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.contact img {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+}
+
+.contactForm {
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0;
+  color: #fdc131;
+}
+.contactForm .btn {
+  font-size: 20px;
+  color: #000;
+  background-color: #fdc131;
+  border: 0px solid #fdc131;
+  border-radius: 0;
+}
+.contactForm .btn:hover {
+  color: #fff;
+  background-color: #000;
+}
+.contactForm p {
+  padding: 1rem;
+}
+.contactForm h2 {
+  background-color: #fff;
 }
 
 footer {
@@ -120,7 +255,7 @@ footer {
   width: 100vw;
   background-color: #fdc131;
   font-family: "Montserrat";
-  padding: 20px;
+  padding: 15px;
   color: #000;
   align-items: center;
   flex-direction: column;
